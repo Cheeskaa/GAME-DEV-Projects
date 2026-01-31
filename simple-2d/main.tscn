@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3 uid="uid://112i1t4phcfp"]
+
+[ext_resource type="Script" uid="uid://c1eoqhm83vmr8" path="res://hello_label.gd" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://qgr4kfc4qx3r" path="res://box.gd" id="2_0xm2m"]
+[ext_resource type="Script" uid="uid://c4axvmjxrsc6y" path="res://hello_text.gd" id="3_h2yge"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_h2yge"]
+
+[node name="Main" type="Node2D"]
+
+[node name="HelloLabel" type="Label" parent="."]
+modulate = Color(0.9674658, 0.3789918, 0.6622336, 1)
+self_modulate = Color(0.1818954, 1.033453, 0.95496625, 1)
+offset_left = 200.0
+offset_top = 200.0
+offset_right = 400.0
+offset_bottom = 400.0
+scale = Vector2(2, 2)
+text = "Hello World"
+script = ExtResource("1_ig7tw")
+
+[node name="Main" type="Node3D" parent="."]
+
+[node name="Box" type="MeshInstance3D" parent="Main"]
+mesh = SubResource("BoxMesh_h2yge")
+script = ExtResource("2_0xm2m")
+
+[node name="Camera3D" type="Camera3D" parent="Main"]
+transform = Transform3D(1, 0, 0, 0, 0.9659258, 0.25881904, 0, -0.25881904, 0.9659258, 0, 2, 6)
+current = true
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Main"]
+transform = Transform3D(0.11357269, 0.858546, -0.49999997, -0.51882535, 0.48043758, 0.70710677, 0.84730244, 0.17910472, 0.49999997, 0, 0, 0)
+
+[node name="HelloText" type="Label3D" parent="Main"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7984799, 0)
+modulate = Color(0.68246025, 0.9354206, 0.92713356, 1)
+outline_modulate = Color(1, 0.43070373, 0.3041957, 1)
+text = "Hello World"
+font_size = 64
+script = ExtResource("3_h2yge")
