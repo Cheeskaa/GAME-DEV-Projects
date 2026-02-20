@@ -1,0 +1,7 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1771568494
+box.gd::GDScript::1136492274720953205::1771568437::0::1::::<>MeshInstance3D<><>0<>0<><>::
+hello_label.gd::GDScript::6606887811331222299::1771568437::0::1::::<>Label<><>0<>0<><>::
+hello_text.gd::GDScript::6809752470646657534::1771568437::0::1::::<>Label3D<><>0<>0<><>::
+icon.svg::CompressedTexture2D::3730306955771925682::1771568437::1771568497::1::::<><><>0<>0<>3201915fce4393b60efc2c3fa9519615<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+main.tscn::PackedScene::1880238797646667465::1771568437::0::1::::<><><>0<>0<><>::uid://c1eoqhm83vmr8::::res://hello_label.gd<>uid://qgr4kfc4qx3r::::res://box.gd<>uid://c4axvmjxrsc6y::::res://hello_text.gd
