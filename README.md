@@ -17,3 +17,11 @@ Description:
 Created a simple 2d game where it handles keyboard or inputs, physics bodies, and collision detection. It has the basics of player controllers such as movement, jumping.
 - The assets were free taken from the web.
 - Added physical layers to the dirts or walkable platforms.
+
+# Week 2: Activity 2 - Level Design
+Screenshots:
+<img width="1155" height="637" alt="image" src="https://github.com/user-attachments/assets/0fdbe8e9-4d2f-4876-aca6-bfba33afd30f" />
+<img width="783" height="199" alt="image" src="https://github.com/user-attachments/assets/b45760ab-c0f8-4985-93fc-23b73a652742" />
+
+Description:
+Added obstacles and levels in the game. When the player dies, he will go back to the start. Once the player reaches the sign for level 2, there will be a notification.
