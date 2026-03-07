@@ -25,3 +25,16 @@ Screenshots:
 
 Description:
 Added obstacles and levels in the game. When the player dies, he will go back to the start. Once the player reaches the sign for level 2, there will be a notification.
+
+# Week 3: Activity1 UI/UX & Audio & Activity 2 AI & Enemies
+Screenshots:
+<img width="1153" height="645" alt="image" src="https://github.com/user-attachments/assets/3c1d1547-08e2-4ee7-8fb3-758ce5a8a911" />
+<img width="1157" height="645" alt="image" src="https://github.com/user-attachments/assets/67e58745-fd45-4a17-87f0-655d6fedcd36" />
+<img width="1148" height="649" alt="image" src="https://github.com/user-attachments/assets/66937c65-816d-434c-b59e-33592fcf08ab" />
+<img width="363" height="161" alt="image" src="https://github.com/user-attachments/assets/044b8e22-71ea-4447-bcc3-7e67d764d9d6" />
+<img width="567" height="365" alt="image" src="https://github.com/user-attachments/assets/95cdbd62-e8ac-47f6-9665-dc4e1cbfb98c" />
+<img width="1561" height="901" alt="image" src="https://github.com/user-attachments/assets/a2dd4459-3a47-4276-b32d-6718d2f73222" />
+<img width="1188" height="767" alt="image" src="https://github.com/user-attachments/assets/8efb1512-a437-4722-907b-5f154da2a476" />
+
+Description:
+I added a health bar and score for the player. Whenever the player hits an enemy, the health will decrease by 1 and whenever it collects a coin, the score increase by 1. All will reset when the player will die. Added Background music and sound effects, only to the player being hurt and picking up the coin. I also added enemies, both static and moving side by side.
