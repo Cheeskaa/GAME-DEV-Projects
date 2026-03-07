@@ -7,9 +7,9 @@
 [ext_resource type="Script" uid="uid://htk6xm2po3ko" path="res://scenes/level_2_trigger.gd" id="5_tbgi4"]
 [ext_resource type="PackedScene" uid="uid://cvlfesl3hdgri" path="res://scenes/coin.tscn" id="6_tefeu"]
 [ext_resource type="PackedScene" uid="uid://ed1uxkqdl6mr" path="res://scenes/small_platform.tscn" id="7_85g3d"]
+[ext_resource type="AudioStream" uid="uid://cw1rpn4ueq5jc" path="res://assets/music/time_for_adventure.mp3" id="7_o6xl0"]
 [ext_resource type="PackedScene" uid="uid://dkepie3uuospc" path="res://scenes/slime.tscn" id="8_tipki"]
 [ext_resource type="PackedScene" uid="uid://ddkgq2gwfrbih" path="res://scenes/purp_slime.tscn" id="10_choun"]
-[ext_resource type="Texture2D" uid="uid://dmuv21ojff07j" path="res://assets/health_bar/hp_bar_inner.png" id="11_eb6dy"]
 [ext_resource type="Script" uid="uid://burvjtkmq0ox8" path="res://scripts/hud.gd" id="11_ya4ey"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sugp2"]
@@ -356,6 +356,10 @@ position = Vector2(916, 16)
 [node name="SmallPlatform4" parent="Platforms" unique_id=229160668 instance=ExtResource("7_85g3d")]
 position = Vector2(966, -4)
 
+[node name="Music" type="AudioStreamPlayer2D" parent="." unique_id=225058445]
+stream = ExtResource("7_o6xl0")
+autoplay = true
+
 [node name="Enemy" type="Node" parent="." unique_id=936550003]
 
 [node name="Slime" parent="Enemy" unique_id=829192507 instance=ExtResource("8_tipki")]
@@ -379,10 +383,10 @@ autoplay = &"move"
 script = ExtResource("11_ya4ey")
 
 [node name="ScoreLabel" type="Label" parent="HUD" unique_id=1206482649]
-offset_left = 24.0
-offset_top = 37.0
-offset_right = 100.0
-offset_bottom = 65.0
+offset_left = 2.0
+offset_top = 8.0
+offset_right = 78.0
+offset_bottom = 36.0
 theme_override_constants/outline_size = 5
 theme_override_font_sizes/font_size = 20
 text = "Score: 0"
@@ -391,12 +395,11 @@ text = "Score: 0"
 anchors_preset = -1
 anchor_right = 0.064
 anchor_bottom = 0.023000002
-offset_left = 22.0
-offset_top = 22.0
-offset_right = 160.272
-offset_bottom = 34.096
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 1.2719955
+offset_bottom = 1.0959988
 max_value = 10.0
 value = 10.0
-texture_progress = ExtResource("11_eb6dy")
 
 [connection signal="body_entered" from="Level2Trigger" to="Level2Trigger" method="_on_body_entered"]
